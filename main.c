@@ -1,17 +1,6 @@
 #include "header.h"
 
 int main(int argc, char *argv[]) {
-    if (argc == 1) {
-        printf("Error: No file passed to make database\n");
-        return FAILURE;
-    }
-
-    validate(argc, argv);   // will create linked list
-
-    if (head == NULL) {
-        printf("Warning: No valid files added. Please proceed with caution.\n");
-    }
-
     create_hash_table();
 
     int opt;

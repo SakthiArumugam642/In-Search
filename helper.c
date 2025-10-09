@@ -77,7 +77,7 @@ void validate(int argc, char *argv[]) {
                 last = last->link;
             last->link = node;
         }
-
+        printf("File %s validated successfully\n", argv[i]);
         fclose(fp);
     }
 }
@@ -173,6 +173,17 @@ void add_database(char *filename) {
 
 // Create database using validated CLI files in arg_head
 void create_database(int argc, char *argv[]) {
+    if (argc == 1) {
+        printf("Error: No file passed to make database\n");
+        return;
+    }
+
+    validate(argc, argv);   // will create linked list
+    
+    if (head == NULL) {
+        printf("Warning: No valid files added. Please proceed with caution.\n");
+    }
+
     if (create_flag) {
         printf("Error: Database already created. Please save before creating again.\n");
         return;
