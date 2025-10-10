@@ -1,7 +1,7 @@
 /*
-Name : Sakthivel A
-Date : 25-09-2025
-Desc : Inverted Search
+Description	: Inverted Indexing using Hash Table
+Date		: 10th October 2025
+Author		: Sakthivel A
 */
 #ifndef HEADER_H
 #define HEADER_H

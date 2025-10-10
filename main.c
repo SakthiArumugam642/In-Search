@@ -1,3 +1,9 @@
+/*
+Description	: Inverted Indexing using Hash Table
+Date		: 10th October 2025
+Author		: Sakthivel A
+*/
+
 #include "header.h"
 
 int main(int argc, char *argv[]) {
